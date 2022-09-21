@@ -1,8 +1,14 @@
+/* atributos genereales */
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
+}
+
+img {
+    height: 15em;
 }
 
 /* Contenido*/
@@ -13,21 +19,26 @@ body {
     align-items: center;
 }
 
-.tienda {
+.feria {
     width: 60em;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
-.carrito {
+.productos {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tikets {
     width: 40em;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
