@@ -19,36 +19,38 @@
             <div class="productos">
                 <div class="tikets1">
                     <div class="ticket1">
-                        <img src="img/coches.jpg" alt="producto">
+                        <img src="img/coches.jpg" id="coches" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                     <div class="ticket2">
-                        <img src="img/tren.jpg" alt="producto">
+                        <img src="img/tren.jpg" id="tren" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                     <div class="ticket3">
-                        <img src="img/noria.jpg" alt="producto">
+                        <img src="img/noria.jpg" id="noria" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                     <div class="ticket4">
-                        <img src="img/tiketgratis.jpg" alt="producto">
+                        <img src="img/tiketgratis.jpg" id="tiketgratis" alt="producto" draggable="true"
+                            ondragstart="dreg(event)">
                     </div>
                     <div class="ticket5">
-                        <img src="img/avion.jpg" alt="producto">
+                        <img src="img/avion.jpg" id="avion" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                 </div>
                 <div class="tikets2">
                     <div class="ticket6">
-                        <img src="img/comida.jpg" alt="producto">
+                        <img src="img/comida.jpg" id="comida" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                     <div class="ticket6">
-                        <img src="img/MIEDO.jpg" alt="producto">
+                        <img src="img/miedo.jpg" id="miedo" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                     <div class="ticket6">
-                        <img src="img/platillo.jpg" alt="producto">
+                        <img src="img/platillo.jpg" id="platillo" alt="producto" draggable="true"
+                            ondragstart="dreg(event)">
                     </div>
                     <div class="ticket6">
-                        <img src="img/GLOBO.jpg" alt="producto">
+                        <img src="img/GLOBO.jpg" id="globo" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                     <div class="ticket6">
-                        <img src="img/moto.jpg" alt="producto">
+                        <img src="img/moto.jpg" id="moto" alt="producto" draggable="true" ondragstart="dreg(event)">
                     </div>
                 </div>
             </div>
@@ -58,10 +60,10 @@
         <div class="tikets">
             <!-- estructuctura carrito -->
             <div class="arrastraAqui">
-                <img src="img/carrito.jpg" alt="carrito">
+                <img src="img/carrito.jpg" alt="carrito" id="carrito" ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
             </div>
             <div class="precio">
-                <p>Precio total <strong>100</strong></p>
             </div>
         </div>
     </section>
