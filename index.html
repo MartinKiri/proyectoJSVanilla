@@ -19,38 +19,38 @@
             <div class="productos">
                 <div class="tikets1">
                     <div class="ticket1">
-                        <img src="img/coches.jpg" id="coches" alt="producto" draggable="true" ondragstart="dreg(event)">
+                        <img src="img/coches.jpg" id="coches" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
                     <div class="ticket2">
-                        <img src="img/tren.jpg" id="tren" alt="producto" draggable="true" ondragstart="dreg(event)">
+                        <img src="img/tren.jpg" id="tren" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
                     <div class="ticket3">
-                        <img src="img/noria.jpg" id="noria" alt="producto" draggable="true" ondragstart="dreg(event)">
+                        <img src="img/noria.jpg" id="noria" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
                     <div class="ticket4">
-                        <img src="img/tiketgratis.jpg" id="tiketgratis" alt="producto" draggable="true"
-                            ondragstart="dreg(event)">
+                        <img src="img/tiketgratis.jpg" id="tiketgratis" alt="producto" ondragstart="drag(event)"
+                            draggable="true">
                     </div>
                     <div class="ticket5">
-                        <img src="img/avion.jpg" id="avion" alt="producto" draggable="true" ondragstart="dreg(event)">
+                        <img src="img/avion.jpg" id="avion" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
                 </div>
                 <div class="tikets2">
                     <div class="ticket6">
-                        <img src="img/comida.jpg" id="comida" alt="producto" draggable="true" ondragstart="dreg(event)">
+                        <img src="img/comida.jpg" id="comida" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
-                    <div class="ticket6">
-                        <img src="img/miedo.jpg" id="miedo" alt="producto" draggable="true" ondragstart="dreg(event)">
+                    <div class="ticket7">
+                        <img src="img/miedo.jpg" id="miedo" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
-                    <div class="ticket6">
-                        <img src="img/platillo.jpg" id="platillo" alt="producto" draggable="true"
-                            ondragstart="dreg(event)">
+                    <div class="ticket8">
+                        <img src="img/platillo.jpg" id="platillo" alt="producto" ondragstart="drag(event)"
+                            draggable="true">
                     </div>
-                    <div class="ticket6">
-                        <img src="img/GLOBO.jpg" id="globo" alt="producto" draggable="true" ondragstart="dreg(event)">
+                    <div class="ticket9">
+                        <img src="img/globo.jpg" id="globo" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
-                    <div class="ticket6">
-                        <img src="img/moto.jpg" id="moto" alt="producto" draggable="true" ondragstart="dreg(event)">
+                    <div class="ticket10">
+                        <img src="img/moto.jpg" id="moto" alt="producto" ondragstart="drag(event)" draggable="true">
                     </div>
                 </div>
             </div>
@@ -59,12 +59,17 @@
         <!-- carrito por la parte de la derecha -->
         <div class="tikets">
             <!-- estructuctura carrito -->
-            <div class="arrastraAqui">
-                <img src="img/carrito.jpg" alt="carrito" id="carrito" ondrop="drop(event)"
-                    ondragover="allowDrop(event)">
+            <div class="arrastraAqui" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/carrito.jpg" alt="carrito" id="carrito">
             </div>
-            <div class="precio">
+            <div id="totalProductos" class="precio">
+                <button type="button" onclick="document.getElementById('precio').innerHTML = 0">
+                    Vaciar
+                </button>
             </div>
+            <button type="button" onclick="document.getElementById('precio').innerHTML = 0">
+                Vaciar
+            </button>
         </div>
     </section>
     <!-- scripts -->
