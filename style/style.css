@@ -5,10 +5,17 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
+    background: radial-gradient(ellipse at top, #e66465, transparent), radial-gradient(ellipse at bottom, #4d9f0c, transparent);
 }
 
 img {
     height: 10em;
+    border-radius: 20%;
+}
+
+button{
+    background:black;
+    color:white
 }
 
 /* Contenido*/
