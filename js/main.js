@@ -65,4 +65,9 @@ const drop = (ev) => {
     });
     precioTotal += tiket.precio;
     totalProductos.innerHTML = `${precioTotal} €`;
+    // if (precioTotal >= 100) {
+    //     alert("Te vas a gastar más de 100€");
+    //     alert("Por cada TIKET que quieras comprar te lo volverémos a preguntar");
+    //     alert("Es una atracción, estas seguro ?");
+    // }
 };
