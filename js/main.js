@@ -7,11 +7,11 @@ totalProductos.innerHTML = `${precioTotal} €`;
 let objetos = [
     {
         id: "coches",
-        precio: 3
+        precio: 3.50
     },
     {
         id: "tren",
-        precio: 5
+        precio: 6.80
     },
     {
         id: "noria",
@@ -19,7 +19,7 @@ let objetos = [
     },
     {
         id: "tiketgratis",
-        precio: 0.5
+        precio: 1
     },
     {
         id: "avion",
@@ -27,35 +27,41 @@ let objetos = [
     },
     {
         id: "comida",
-        precio: 5
+        precio: 2.5
     },
     {
         id: "miedo",
-        precio: 10
+        precio: 8
     },
     {
         id: "platillo",
-        precio: 35
+        precio: 4
     },
     {
         id: "globo",
-        precio: 10
+        precio: 60
     },
     {
         id: "moto",
-        precio: 8
+        precio: 5
     }
 ];
 
-/////////////////////////////////////////////////////
+//////////////////////  FUNCIONES   ///////////////////////////////
 
 const drag = (ev) => {
     ev.dataTransfer.setData("text", ev.target.id);
-
 };
+
 const allowDrop = (ev) => {
     ev.preventDefault();
 };
+
+const vaciar = () => {
+    precioTotal = 0;
+    totalProductos.innerHTML = precioTotal + "€";
+};
+
 const drop = (ev) => {
     ev.preventDefault();
     let data = ev.dataTransfer.getData("text");
@@ -65,9 +71,8 @@ const drop = (ev) => {
     });
     precioTotal += tiket.precio;
     totalProductos.innerHTML = `${precioTotal} €`;
-    // if (precioTotal >= 100) {
-    //     alert("Te vas a gastar más de 100€");
-    //     alert("Por cada TIKET que quieras comprar te lo volverémos a preguntar");
-    //     alert("Es una atracción, estas seguro ?");
-    // }
+    if(precioTotal >= 100) {
+        alert("Te vas a gastar más de 100€,");
+    }
 };
+//funcion contar tiempo de las atracciones//
