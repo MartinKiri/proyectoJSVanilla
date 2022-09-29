@@ -9,15 +9,27 @@
     <!-- links para utilidad -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="shortcut icon" href="img/gandia.png" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <img src="img/gandia.png" alt="logo" class="logo">
+        <nav>
+            <li>Bienvenido a la feria de gandia</li>
+        </nav>
+    </header>
+    <br>
     <section class="contenido">
         <!-- tienda por la parte de la izquierda -->
         <div class="feria">
             <div class="productos">
-                <div class="tikets1">
+                <div class="tickets1">
+                    <div class="ticket4">
+                        <img src="img/tiketgratis.jpg" id="tiketgratis" alt="producto" ondragstart="drag(event)"
+                            draggable="true">
+                        <p class="valorTiket">Precio de entrada a la feria 1 €</p>
+                    </div>
                     <div class="ticket1">
                         <img src="img/coches.jpg" id="coches" alt="producto" ondragstart="drag(event)" draggable="true">
                         <p class="valorTiket">Precio del tiket coches choque 3.50 €</p>
@@ -30,29 +42,24 @@
                         <img src="img/noria.jpg" id="noria" alt="producto" ondragstart="drag(event)" draggable="true">
                         <p class="valorTiket">Precio del tiket noria 8 €</p>
                     </div>
-                    <div class="ticket4">
-                        <img src="img/tiketgratis.jpg" id="tiketgratis" alt="producto" ondragstart="drag(event)"
-                            draggable="true">
-                            <p class="valorTiket">Precio del tiket 1 €</p>
-                    </div>
                     <div class="ticket5">
                         <img src="img/avion.jpg" id="avion" alt="producto" ondragstart="drag(event)" draggable="true">
-                        <p class="valorTiket">Precio del tiket 10 €</p>
+                        <p class="valorTiket">Precio del tiket booster 10 €</p>
                     </div>
                 </div>
-                <div class="tikets2">
+                <div class="tickets2">
                     <div class="ticket6">
                         <img src="img/comida.jpg" id="comida" alt="producto" ondragstart="drag(event)" draggable="true">
                         <p class="valorTiket">Precio del tiket comida 2.5 €</p>
                     </div>
                     <div class="ticket7">
                         <img src="img/miedo.jpg" id="miedo" alt="producto" ondragstart="drag(event)" draggable="true">
-                        <p class="valorTiket">Precio del tiket casa terror 8 €</p>
+                        <p class="valorTiket">Precio del tiket casa del terror 8 €</p>
                     </div>
                     <div class="ticket8">
                         <img src="img/platillo.jpg" id="platillo" alt="producto" ondragstart="drag(event)"
                             draggable="true">
-                            <p class="valorTiket">Precio del tiket platillo saltarin 4 €</p>
+                        <p class="valorTiket">Precio del tiket platillo saltarin 4 €</p>
                     </div>
                     <div class="ticket9">
                         <img src="img/globo.jpg" id="globo" alt="producto" ondragstart="drag(event)" draggable="true">
@@ -60,7 +67,7 @@
                     </div>
                     <div class="ticket10">
                         <img src="img/moto.jpg" id="moto" alt="producto" ondragstart="drag(event)" draggable="true">
-                        <p class="valorTiket">Precio del tiket miki tren 5€</p>
+                        <p class="valorTiket">Precio del tiket tren dragon 5€</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +79,7 @@
             <div class="arrastraAqui" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <img src="img/carrito.jpg" alt="carrito" id="carrito">
             </div>
-            
+
             <div id="totalProductos" class="precio"></div>
             <div id="totalTiempo" class="tiempo"></div>
 

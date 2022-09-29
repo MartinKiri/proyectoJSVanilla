@@ -8,11 +8,26 @@ body {
     background: radial-gradient(ellipse at top, #e66465, transparent), radial-gradient(ellipse at bottom, #4d9f0c, transparent);
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 img {
-    height: 10em;
+    height: 7em;
     border-radius: 20%;
 }
 
+li {
+    color: white;
+    font-size: 6em;
+    list-style: none;
+}
+
+p {
+    text-align: center;
+}
 
 
 /* Contenido*/
@@ -22,41 +37,29 @@ img {
     justify-content: center;
     align-items: center;
 }
-
-.feria {
-    width: 56em;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 .productos {
     display: flex;
-    flex-direction: row;
-    text-align: center;
 }
-
 .tikets {
+    width: 20em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
 }
 
 .boton {
     height: 2em;
     width: 10em;
-    background-color: black; 
+    background-color: black;
     color: white;
     border-radius: 10em;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     cursor: pointer;
 }
- 
+
 .boton:hover {
     transition: 0.3s;
     background-color: grey;
